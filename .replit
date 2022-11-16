@@ -1,0 +1,22 @@
+run = ["cargo", "build"]
+hidden = ["target"]
+
+entrypoint = "src/lib.rs"
+
+[packager]
+language = "rust"
+
+[packager.features]
+packageSearch = true
+
+[languages.rust]
+pattern = "**/*.rs"
+
+[languages.rust.languageServer]
+start = "rust-analyzer"
+
+[nix]
+channel = "stable-22_05"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]

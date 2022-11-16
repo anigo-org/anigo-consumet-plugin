@@ -1,0 +1,12 @@
+[package]
+name = "anigo-consumet-plugin"
+version = "0.1.0"
+authors = ["runner"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+path = "src/lib.rs"
+
+[dependencies]
+anigo = { branch = "main", git = "https://github.com/anigo-org/anigo-plugin-model", package = "anigo-plugin-model" }
