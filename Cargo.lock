@@ -12,4 +12,4 @@ dependencies = [
 [[package]]
 name = "anigo-plugin-model"
 version = "0.1.0"
-source = "git+https://github.com/anigo-org/anigo-plugin-model?branch=main#065be2a11302ebf08903dc35dda087d83f1951a3"
+source = "git+https://github.com/anigo-org/anigo-plugin-model?branch=main#c0d1865f06990bd2707ee9bb2873eb7d2eaf7471"

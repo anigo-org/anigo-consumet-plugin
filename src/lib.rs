@@ -2,7 +2,8 @@ use std::{any::Any, fmt::Error};
 
 use anigo::{Plugin, Provider};
 
-#[derive(Clone, Copy, Debug)]
+#[derive(Clone, Debug)]
+#[repr(C)]
 pub struct Identify {}
 
 impl Provider for Identify {
@@ -16,10 +17,12 @@ impl Provider for Identify {
     }
 }
 
-pub static PROVIDER: dyn Provider = Identify {};
+#[no_mangle]
+pub static PROVIDER: Identify = Identify {};
 
+#[no_mangle]
 pub static PLUGIN: Plugin = Plugin {
-    providers: &[&PROVIDER],
+    providers: &[],
     workers: &[],
     name: "",
 };

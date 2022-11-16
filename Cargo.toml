@@ -1,7 +1,7 @@
 [package]
 name = "anigo-consumet-plugin"
 version = "0.1.0"
-authors = ["runner"]
+authors = ["FlamesX-128", "anigo-org"]
 edition = "2021"
 
 [lib]
