@@ -1,5 +1,5 @@
-pub mod providers;
 pub mod models;
+pub mod providers;
 
 use anigo::Plugin;
 

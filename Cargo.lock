@@ -21,7 +21,7 @@ dependencies = [
 [[package]]
 name = "anigo-plugin-model"
 version = "0.1.0"
-source = "git+https://github.com/anigo-org/anigo-plugin-model?branch=main#f8ad336e0758b009d56cb8383252965b49eec32e"
+source = "git+https://github.com/anigo-org/anigo-plugin-model?branch=main#552fca06fed65e4a8c6662945abbf4615592a1bd"
 dependencies = [
  "serde_json",
 ]
