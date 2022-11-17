@@ -10,3 +10,6 @@ path = "src/lib.rs"
 
 [dependencies]
 anigo = { branch = "main", git = "https://github.com/anigo-org/anigo-plugin-model", package = "anigo-plugin-model" }
+ureq = { version = "2.5.0", features = ["json", "charset"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
